@@ -70,7 +70,7 @@ export class App extends Component {
   }
 
   openModal = (e) => {
-    const currentLargeImage = this.state.pictures.filter(pic => pic.id === e.currentTarget.id)
+    const currentLargeImage = this.state.pictures.filter(pic => String(pic.id) === String(e.currentTarget.id))
     this.setState({ largeImage: currentLargeImage[0].largeImageURL })
     this.setState({ isModalOpen: true })
   }

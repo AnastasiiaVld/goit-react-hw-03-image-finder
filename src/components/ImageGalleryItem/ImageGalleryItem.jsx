@@ -2,10 +2,9 @@ import s from "./ImageGalleryItem.module.css"
 import PropTypes from 'prop-types';
 
 
-export const ImageGalleryItem = ({ picture, openModal}) => {
+export const ImageGalleryItem = ({ picture, openModal }) => {
     return (
         <li
-           
             className={s.item}
             onClick={openModal}
             id={picture.id}
